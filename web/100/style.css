@@ -1,0 +1,119 @@
+div {
+    width: 100%;
+    height: 100%;
+
+}
+div.one {
+    background: url(1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+div.two {
+    background: url(2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+div.three {
+    background: url(3.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+div.four {
+    background: url(4.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+div.five {
+    background: url(5.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+div.six {
+    background: url(6.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+div.seven {
+    background: url(7.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+div.eight {
+    background: url(8.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+div.nine {
+    background: url(9.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+div.ten {
+    background: url(10.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+div.eleven {
+    background: url(11.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+div.twelve {
+    background: url(12.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+div.thirteen {
+    background: url(13.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+div.fourteen {
+    background: url(14.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+div.fifteen {
+    background: url(15.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+div.sixteen {
+    background: url(16.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+div.seventeen {
+    background: url(17.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+div.eighteen {
+    background: url(18.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+div.nineteen {
+    background: url(19.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
