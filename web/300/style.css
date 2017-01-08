@@ -1,0 +1,20 @@
+body {
+    background: url(swami.png);
+    color: white;
+}
+h1 {
+    font-family: 'Baloo Thambi', cursive;
+    font-size: 96px;
+    margin: 0px;
+    text-align: center;
+}
+h2 {
+    font-family: 'Indie Flower', cursive;
+    font-size: 38px;
+    margin: 0px;
+    text-align: center;
+}
+fieldset {
+    margin-left: 25%;
+    margin-right: 25%
+}
