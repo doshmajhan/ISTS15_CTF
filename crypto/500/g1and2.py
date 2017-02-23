@@ -12,8 +12,10 @@
 # Plain-er text: BETWEEN SUBTLE SHADING AND THE ABSENCE OF LIGHT LIES THE NUANCE OF IQLUSION
 #
 # 63 characters for message one
-# Should include a typo (will tie into final flag! :O)
-#
+# Should include a typo
+msg1 = "historyhastaughtyoutoseektheflagsinplainsightlikefeephiphothumb".upper()
+assert len(msg1) == 63
+# (History has taught you to seek the flags in plain sight like feephiphothumb)
 #
 # G2 Expected Ciphertext shape
 # VFPJUDEEHZWETZYVGWHKKQETGFQJNCE   (31)
@@ -30,6 +32,19 @@
 # DQUMEBEDMHDAFMJGZNUPLGESWJLLAETG  (32)
 #
 # 373 characters for message two
+# G2 Key ABSCISSA
+
+
+msg2 = "".join("""
+It was made of pure gold how is that possible
+They couldnt ration it out properly
+They skipped and gathered round and round until the resting place was found
+The riches were gathered up and transferred by ship to an unknown location who knows the exact location
+Only OL This was his last message
+forty five degrees twenty eight minutes twenty point one seconds north
+One hundred twenty six degrees fifty eight minutes thirty two point one seconds west
+""".strip().split()).upper()
+assert len(msg2) == 373
 
 GRYPTO_ALPHA = "GRYPTOABCDEFHIJKLMNQSUVWXZ"
 GRYPTO_TABLE = [GRYPTO_ALPHA[n:] + GRYPTO_ALPHA[:n] for n in range(len(GRYPTO_ALPHA))]
@@ -40,11 +55,14 @@ def encrypt(message, key, table):
     encrypted = ""
     index = 0
     for ch in message:
-        enc = rows[key[index].upper()][table[0].index(ch.upper())]
-        if ch.isupper():
-            encrypted += enc.upper()
+        if ch in GRYPTO_ALPHA:
+            enc = rows[key[index].upper()][table[0].index(ch.upper())]
+            if ch.isupper():
+                encrypted += enc.upper()
+            else:
+                encrypted += enc.lower()
         else:
-            encrypted += enc.lower()
+            encrypted += ch
         index += 1
         index %= len(key)
 
@@ -56,17 +74,18 @@ def decrypt(cipher, key, table):
     decrypted = ""
     index = 0
     for ch in cipher:
-        dec = table[0][rows[key[index].upper()].index(ch.upper())]
-        if ch.isupper():
-            decrypted += dec.upper()
+        if ch in GRYPTO_ALPHA:
+            dec = table[0][rows[key[index].upper()].index(ch.upper())]
+            if ch.isupper():
+                decrypted += dec.upper()
+            else:
+                decrypted += dec.lower()
         else:
-            decrypted += dec.lower()
+            decrypted += ch
         index += 1
         index %= len(key)
 
     return decrypted
 
-
-
-
-
+CIPHER_1 = encrypt(msg1, "PALIMPSEST", GRYPTO_TABLE)
+CIPHER_2 = encrypt(msg2, "ABSCISSA", GRYPTO_TABLE)
