@@ -20,6 +20,12 @@ applying trial and error, should lead to a column size of 20 characters.
 Adding a newline every 20 characters should give a clear representation
 of the flag.
 
+## 200 - Bad Crypto is Best Crypto
+### Description
+This encryption mechanism works alright, but the coder who made it
+doesn't really know what he is doing. This could be deployed
+across many IoT devices, so its imperative you figure out if there
+are any security vulnerabilites in the code.
 
 ## Competition Notes
 Binary files appended with `testing` are for debugging purposes before
