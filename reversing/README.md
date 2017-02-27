@@ -26,8 +26,6 @@ Binary files appended with `testing` are for debugging purposes before
 the competition. They are not the ones distributed to participants. They
 are included in the repo for completeness sake.
 
-Binaries with `release` appended are the binary files deemed distributable
-for the purpose of the competition.
 
 Binaries with `private` appended are competition binaries running server
-applications that are based on the `release` version of the same file.
+applications that are based on the release version of the same file.
