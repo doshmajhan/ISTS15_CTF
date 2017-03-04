@@ -1,0 +1,16 @@
+.col
+{
+    float: left;
+    width: 25%;
+}
+
+.last{
+    float: right;
+    width: 25%;
+}
+.row{
+    height: auto;
+    overflow: auto;
+}
+
+
