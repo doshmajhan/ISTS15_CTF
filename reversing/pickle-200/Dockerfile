@@ -14,4 +14,4 @@ RUN chmod 644 /opt/challenge/flag.txt
 USER challenge
 WORKDIR /opt/challenge
 
-CMD "python3 pwn-200.py;"
+CMD ["/usr/bin/python3", "pwn-200.py"]
