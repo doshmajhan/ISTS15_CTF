@@ -2,7 +2,7 @@ CC=gcc
 CFLAGS=-Wall -Werror
 
 clean:
-	rm -f rev-100-testing rev-100-release rev-100-private
+	rm -f rev-100-testing rev-100-release rev-100-private rev-100
 
 test: rev-100.c
 	$(CC) $(CFLAGS) -g -o rev-100-testing rev-100.c

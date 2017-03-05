@@ -256,5 +256,6 @@ int main() {
     WRITELETTER(outfile,RB);
 
     fclose(outfile);
+    return 0;
 }
 
