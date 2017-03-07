@@ -3,7 +3,9 @@ The second challenge in a series of crypto challenges based on the Kryptos statu
 
 ## First phase
 Cipher: Keyed Vigenère
+
 Key: `ABSCISSA`
+
 Length: 373 chars
 
 CT:
@@ -20,7 +22,9 @@ PT:
 
 ## Second phase
 Cipher: Double Transposition
+
 Length: 336 chars
+
 Flag: `theshadowman`
 
 CT:
